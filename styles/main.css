@@ -27,7 +27,7 @@ main h1 {
 	font-size: 150%;
 }
 main h2 {
-	color: var(--global-color-1);
+	color: red
 	font-size: 130%;
 }
 main h3 {
