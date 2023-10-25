@@ -34,7 +34,12 @@ main h3 {
 	font-size: 105%;
 }
 a:hover, a:focus {
-    font-style: italic;
+    	font-style: italic;
+}
+p span {
+  	font-style: italic;
+  	color: red;
+	text-shadow: 2px 2px red;
 }
 
 /* the styles for the footer */
