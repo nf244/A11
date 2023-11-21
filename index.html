@@ -3,9 +3,16 @@
 
 <head>
 	<meta charset="utf-8">
+	<!-- Sets the viewport scale -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>San Joaquin Valley Town Hall</title>
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/c7_main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+
+
+
 </head>
 
 <body>
@@ -14,9 +21,12 @@
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
+	<nav id="mobile_menu">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	</nav>
 	<nav id="nav_menu">
 		<ul>
-			<li><a class="current" href="index.html" >Home</a></li>
+			<li><a class="current" href="index.html">Home</a></li>
 			<li><a href="speakers.html">Speakers</a></li>
 			<li><a href="luncheons.html">Luncheons</a></li>
 			<li><a href="tickets.html">Tickets</a></li>
@@ -42,7 +52,7 @@
 			<h1>Speaker of the Month</h1>
 			<article>
 				<h2>Fossil Threads in the Web of Life</h2>
-				<img src="images/sampson_dinosaur.jpg" alt="Scott Sampson with dinosaur">
+				<img src="images/sampson_dinosaur.jpg" alt="Scott Sampson with dinosaur" width="250" height="150">
 				<h3>February<br>
 					Scott Sampson</h3>
 				<p>What's 75 million years old and brand spanking new? A teenage Utahceratops!
@@ -50,7 +60,8 @@
 					Curator at the Utah Museum of Natural History, steps to the podium. Sampson's research
 					has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted
 					fieldwork in a number of countries in Africa.</p>
-				<p><a href="speakers/c6_sampson.html">Read more.</a>&nbsp;<b><a href="media/sampson.mp4"  target="_blank">Or play video!</a></b></p>
+				<p><a href="speakers/c6_sampson.html">Read more.</a>&nbsp;<b><a href="media/sampson.mp4"
+							target="_blank">Or play video!</a></b></p>
 			</article>
 
 			<h2>Our Ticket Packages</h2>
@@ -63,20 +74,32 @@
 
 		<aside>
 			<h2>Guest speakers</h2>
-			<h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
-			<img src="images/brancaccio75.jpg" alt="David Brancaccio photo">
-			<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
-			<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
-			<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
-			<img src="images/chua75.jpg" alt="Amy Chua photo">
-			<h3>February<br><a href="speakers/c6_sampson.html">Scott Sampson</a></h3>
-			<img src="images/sampson75.jpg" alt="Scott Sampson photo">
+			<div class="speakers-wrapper">
+				<h3>October<br><a href="speakers/brancaccio.html">David Brancaccio</a></h3>
+				<img src="images/brancaccio75.jpg" alt="David Brancaccio photo">
+				<h3>November<br><a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+				<img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin photo">
+				<h3>January<br><a href="speakers/chua.html">Amy Chua</a></h3>
+				<img src="images/chua75.jpg" alt="Amy Chua photo">
+				<h3>February<br><a href="speakers/c6_sampson.html">Scott Sampson</a></h3>
+				<img src="images/sampson75.jpg" alt="Scott Sampson photo">
+			</div>
 		</aside>
 	</main>
 	<footer>
 		<p>&copy; 2022, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
-		<p>&copy; Nagy Fouad, November 2023</p>
+		<p>&copy; 10 November 2023, Nagy Fouad</p>
 	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/jquery.slicknav.mis.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+		});
+	</script>
 </body>
 
 </html>
